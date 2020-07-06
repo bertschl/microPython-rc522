@@ -12,5 +12,5 @@ Note: This project uses a **Independent slave configuration**.
 
 1. Use *RFID.setSPIProperties(sck, mosi, miso, rst)*, which is a static method, to configure the shared SPI configuration for every slave. The paramters are **pin numbers**, **not** *Pin(xy, PIN.OUT)*.
 2. Use the constructor *RFID.RFID(cs)* to get an object with the given cs/ss pin.
-3. *object.do_read()* to check if a RFID chip is present, returns the raw uid if yes otherwhise *None*. 
+3. *object.do_read()* to check if a RFID chip is present, returns the raw uid if yes otherwhise *None*.   
 **The method/class manages ALL SPI handling, so only these 3 methods have to be used.**
